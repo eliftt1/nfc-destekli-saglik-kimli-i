@@ -1,0 +1,173 @@
+// Sağlık verileri alan bazında uygulama katmanında AES-256-GCM ile şifrelenir.
+// "Enc" ile biten alanlar şifreli metin (base64) tutar; düz metin veritabanına yazılmaz.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+enum TagStatus {
+  ACTIVE
+  REVOKED
+}
+
+enum AccessKind {
+  LINK
+  SHORT_CODE
+}
+
+model User {
+  id                String   @id @default(uuid())
+  email             String   @unique @db.VarChar(255)
+  fullName          String
+  passwordHash      String
+  privacyAcceptedAt DateTime
+  healthConsentAt   DateTime
+  consentVersion    String
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  sessions    Session[]
+  resetTokens PasswordResetToken[]
+  profile     HealthProfile?
+  tags        EmergencyTag[]
+}
+
+model Session {
+  id        String   @id @default(uuid())
+  tokenHash String   @unique
+  userId    String  
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model PasswordResetToken {
+  id        String    @id @default(uuid())
+  tokenHash String    @unique
+  userId    String   
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model HealthProfile {
+  id           String  @id @default(uuid())
+  userId       String  @unique
+  fullNameEnc  String @db.Text
+  birthDateEnc String? @db.Text
+  bloodTypeEnc String? @db.Text
+  noteEnc      String? @db.Text
+  // Acil durum sayfasında gösterme ayarları (ad her zaman gösterilir)
+  showBirthDate   Boolean @default(false)
+  showBloodType   Boolean @default(true)
+  showAllergies   Boolean @default(true)
+  showConditions  Boolean @default(true)
+  showMedications Boolean @default(true)
+  showNote        Boolean @default(true)
+  showContacts    Boolean @default(true)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user        User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  allergies   Allergy[]
+  conditions  ChronicCondition[]
+  medications Medication[]
+  contacts    EmergencyContact[]
+}
+
+model Allergy {
+  id             String   @id @default(uuid())
+  profileId      String  
+  nameEnc        String @db.Text
+  descriptionEnc String? @db.Text
+  createdAt      DateTime @default(now())
+
+  profile HealthProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId])
+}
+
+model ChronicCondition {
+  id             String   @id @default(uuid())
+  profileId      String  
+  nameEnc        String @db.Text
+  descriptionEnc String? @db.Text
+  createdAt      DateTime @default(now())
+
+  profile HealthProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId])
+}
+
+model Medication {
+  id        String   @id @default(uuid())
+  profileId String  
+  nameEnc   String @db.Text
+  usageEnc  String? @db.Text
+  createdAt DateTime @default(now())
+
+  profile HealthProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId])
+}
+
+model EmergencyContact {
+  id          String   @id @default(uuid())
+  profileId   String  
+  nameEnc     String @db.Text
+  relationEnc String @db.Text
+  phoneEnc    String @db.Text
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  profile HealthProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+
+  @@index([profileId, sortOrder])
+}
+
+model EmergencyTag {
+  id            String    @id @default(uuid())
+  userId        String   
+  label         String    @default("Acil durum etiketi")
+  // Arama için HMAC-SHA256 özeti; düz token saklanmaz.
+  tokenHash     String    @unique
+  shortCodeHash String    @unique
+  // Panelde tekrar gösterebilmek için AES-256-GCM ile şifreli kopya.
+  tokenEnc      String @db.Text
+  shortCodeEnc  String @db.Text
+  status        TagStatus @default(ACTIVE)
+  createdAt     DateTime  @default(now())
+  revokedAt     DateTime?
+
+  user       User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessLogs AccessLog[]
+
+  @@index([userId, status])
+}
+
+model AccessLog {
+  id         String     @id @default(uuid())
+  tagId      String    
+  kind       AccessKind
+  // IPv4 için /24, IPv6 için /48 kırpılmış hali; tam IP saklanmaz.
+  ipPrefix   String?
+  accessedAt DateTime   @default(now())
+
+  tag EmergencyTag @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@index([tagId, accessedAt])
+  @@index([accessedAt])
+}

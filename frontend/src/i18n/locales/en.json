@@ -1,0 +1,452 @@
+{
+  "brand": {
+    "name": "Emergency Tag"
+  },
+  "common": {
+    "loading": "Loading…",
+    "retry": "Try again",
+    "cancel": "Cancel",
+    "save": "Save",
+    "back": "Back",
+    "backHome": "Back to home",
+    "required": "required"
+  },
+  "nav": {
+    "login": "Log in",
+    "register": "Create account",
+    "language": "Language",
+    "skipToContent": "Skip to content",
+    "privacy": "Privacy",
+    "terms": "About use",
+    "footerNote": "This is a course project; it is not a medical device or an official health record.",
+    "dashboard": "Dashboard"
+  },
+  "home": {
+    "title": "Your health information, one tap away when it matters.",
+    "text": "Save your allergies, medications and emergency contacts. When the NFC tag or QR code on your bracelet or tag is scanned, the person helping sees only what you chose to share, with no app to install.",
+    "ownerTitle": "Own a tag?",
+    "ownerText": "Create a free account, fill in your profile and get your personal link for the tag.",
+    "codeTitle": "In an emergency and can't scan the tag?",
+    "codeText": "Enter the 10-character code printed on or next to the tag.",
+    "howTitle": "How it works",
+    "steps": {
+      "profile": {
+        "title": "Create your health profile",
+        "text": "Add your blood type, allergies, medications and who to call. You decide which details are visible."
+      },
+      "tag": {
+        "title": "Write the link to a tag",
+        "text": "Write your personal link to an NFC tag or print the QR code. Only this link goes on the tag, never your health data."
+      },
+      "view": {
+        "title": "Information appears in an emergency",
+        "text": "When the tag is scanned, your page opens in the phone's browser. No login needed, and contacts can be called with one tap."
+      }
+    },
+    "nfcTitle": "NFC, QR and short code",
+    "nfcText": "NFC phones open the link when held to the tag. Other phones can scan the QR code with the camera. If neither works, enter the short code on this page.",
+    "trustTitle": "Good to know",
+    "trustText": "The emergency page does not ask for a password. Anyone who knows the link can see only the details you chose to show. If you lose your tag, you can revoke the link in one click and create a new one."
+  },
+  "access": {
+    "title": "Access with a short code",
+    "text": "If you can't read the NFC tag or scan the QR code, type the code from the tag here.",
+    "label": "Short code",
+    "placeholder": "ABCDE-12345",
+    "submit": "Show information",
+    "invalid": "This code is invalid or has been revoked. Check the code and try again.",
+    "rateLimited": "Too many failed attempts. Please try again later.",
+    "network": "Could not reach the server. Check your connection and try again.",
+    "empty": "Please enter the code."
+  },
+  "auth": {
+    "fullName": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "passwordConfirm": "Confirm password",
+    "passwordHint": "At least 10 characters, with at least one letter and one digit.",
+    "login": {
+      "title": "Log in",
+      "submit": "Log in",
+      "forgot": "Forgot password",
+      "noAccount": "No account yet?",
+      "toRegister": "Create one"
+    },
+    "register": {
+      "title": "Create account",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "toLogin": "Log in",
+      "consentsTitle": "Consents",
+      "acceptPrivacy": "I have read and understood the privacy notice.",
+      "privacyLink": "Open the privacy notice",
+      "acceptHealthData": "I give my explicit consent to this platform storing my health data (such as blood type, allergies, conditions and medications) and to the details I choose to show being visible to anyone who has my emergency link. I know I can withdraw this consent by deleting my account."
+    },
+    "forgot": {
+      "title": "Forgot password",
+      "text": "Enter your email address. If an account exists, a password reset link is sent.",
+      "submit": "Request reset link",
+      "sent": "Request received. If an account exists for this address, a password reset link is sent by email.",
+      "notConfigured": "Email delivery is not configured in this environment, so no email was sent. In development the reset link is printed to the server console.",
+      "backToLogin": "Back to log in"
+    },
+    "reset": {
+      "title": "Set a new password",
+      "submit": "Change password",
+      "done": "Your password has been changed. You can now log in with the new password.",
+      "missingToken": "The reset link is missing or malformed. Please request a new one.",
+      "requestNew": "Request a new link"
+    }
+  },
+  "emergency": {
+    "pageTitle": "Emergency information",
+    "loading": "Loading information…",
+    "invalidTitle": "This link is not valid",
+    "invalidText": "The link may be wrong, revoked or expired. No health information can be shown.",
+    "invalidHelp": "You can try entering the short code printed next to the tag.",
+    "enterCode": "Enter short code",
+    "networkTitle": "Could not load the information",
+    "networkText": "Check your internet connection and try again.",
+    "call112": "Call 112 Emergency",
+    "attention": "Attention",
+    "allergies": "Allergies",
+    "medications": "Regular medications",
+    "conditions": "Chronic conditions",
+    "note": "Emergency note",
+    "bloodType": "Blood type",
+    "birthDate": "Date of birth",
+    "age": "{{count}} years old",
+    "contacts": "Emergency contacts",
+    "call": "Call",
+    "updatedAt": "Last updated",
+    "noExtra": "This person has not added any shareable details yet. Call 112 if needed.",
+    "disclaimer": "This information was entered by the person themselves and is not a verified medical record. If you suspect a medical emergency, call 112."
+  },
+  "validation": {
+    "required": "This field is required.",
+    "invalid": "The value is not valid.",
+    "invalid_email": "Enter a valid email address.",
+    "password_too_short": "Password must be at least 10 characters.",
+    "password_too_weak": "Password must contain at least one letter and one digit.",
+    "password_mismatch": "Passwords do not match.",
+    "name_too_short": "Full name must be at least 2 characters.",
+    "too_long": "This value is too long.",
+    "consent_required": "This consent is required to continue.",
+    "email_taken": "This email address is already in use.",
+    "wrong_password": "Wrong password.",
+    "invalid_date": "Enter a valid date in the past.",
+    "invalid_blood_type": "Choose a valid blood type.",
+    "invalid_phone": "Enter a valid phone number.",
+    "invalid_id": "Invalid record."
+  },
+  "errors": {
+    "NETWORK": "Could not reach the server. Check your connection and try again.",
+    "INTERNAL": "An unexpected error occurred. Please try again.",
+    "UNAUTHORIZED": "Your session has ended. Please log in again.",
+    "INVALID_CREDENTIALS": "Incorrect email or password.",
+    "EMAIL_TAKEN": "This email address is already in use.",
+    "RATE_LIMITED": "Too many attempts. Please wait a moment and try again.",
+    "CSRF_INVALID": "Security check failed. Reload the page and try again.",
+    "INVALID_RESET_TOKEN": "The reset link is invalid or has expired. Request a new one.",
+    "WRONG_CURRENT_PASSWORD": "Wrong password.",
+    "VALIDATION_ERROR": "Please check the highlighted fields.",
+    "NOT_FOUND": "Record not found.",
+    "LIMIT_REACHED": "You have reached the maximum number of entries for this list.",
+    "ACTIVE_TAG_EXISTS": "You already have an active tag.",
+    "TAG_REVOKED": "This tag has already been revoked.",
+    "INVALID_ORDER": "The order could not be saved. Reload the page and try again."
+  },
+  "privacy": {
+    "title": "Privacy and usage notice",
+    "draft": "This text is a draft notice prepared as part of the application's development. It is not a guarantee of legal compliance and should be reviewed by a legal professional before launch.",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "Data controller",
+        "body": [
+          "This application was built as a software engineering course project. Before launch, the data controller's name and contact details (for example an email address) must be added here: [NAME / ORGANISATION – CONTACT EMAIL]."
+        ]
+      },
+      {
+        "id": "data",
+        "title": "What data do we collect?",
+        "body": [
+          "Account details: full name, email address and a one-way hash of your password (the password itself is never stored).",
+          "Health profile: date of birth, blood type, allergies, chronic conditions, regular medications and an emergency note. You enter these yourself and all of them are optional.",
+          "Emergency contacts: name, relationship and phone number. Please inform anyone before adding their details.",
+          "Access records: when and how (link/NFC/QR or short code) your emergency page was opened, plus a truncated IP address. No precise location or device identifier is collected.",
+          "Session cookie: a cookie required to keep you logged in. No advertising or tracking cookies are used."
+        ]
+      },
+      {
+        "id": "purpose",
+        "title": "Why do we process it, and on what basis?",
+        "body": [
+          "Account details are processed to create your account and let you log in.",
+          "Health data is special-category personal data. It is processed only to show it to people who help you in an emergency, based on the explicit consent you give separately at registration. This consent is separate from other consents and you can withdraw it by deleting your account.",
+          "Access records are kept to show you when your page was opened and to help you notice misuse."
+        ]
+      },
+      {
+        "id": "emergency",
+        "title": "How does the emergency page work?",
+        "body": [
+          "Only a personal, very hard-to-guess link is written to your tag or QR code. Health information is never written to the tag.",
+          "Anyone who knows this link can open your page without logging in. The page shows only the details you chose to show; hidden fields are never sent by the server.",
+          "Do not share the link publicly. If you lose your tag, revoke the link from the dashboard; the old link will show nothing and you can create a new one.",
+          "The page is marked so that search engines do not index it, but the real protection is the unguessable link and the limited data shown."
+        ]
+      },
+      {
+        "id": "contacts",
+        "title": "Why are contact details shown?",
+        "body": [
+          "The name, relationship and phone number of your emergency contacts are shown so that the person helping you can reach them quickly on your behalf. You can turn this off at any time."
+        ]
+      },
+      {
+        "id": "security",
+        "title": "How do we protect your data?",
+        "body": [
+          "Health data is stored encrypted field by field. Passwords are hashed with Argon2id. Links and short codes are generated randomly and only their digests are stored. In production only HTTPS is used.",
+          "No system is risk-free, so we recommend entering only information you really want to share."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "How long do we keep it, and how can you delete it?",
+        "body": [
+          "Access records are kept for at most 30 days and then deleted automatically.",
+          "From account settings you can at any time (1) delete only your health data and access history, or (2) delete your account completely. When an account is deleted, your profile, links, short codes and all related data are deleted and can no longer be accessed.",
+          "This project keeps no separate records that are legally required to be retained; this should be re-evaluated before launch."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Your rights",
+        "body": [
+          "Under Article 11 of Turkish Personal Data Protection Law No. 6698 you have the right to learn whether your data is processed, request information, request correction or deletion, and object to processing. You can correct and delete data yourself from the dashboard; for other requests use the contact details above."
+        ]
+      },
+      {
+        "id": "usage",
+        "title": "About use",
+        "body": [
+          "This application shows information that users enter themselves in an emergency. It is not a verified medical record; the user is responsible for its accuracy and currency.",
+          "In a medical emergency, call 112 first. This application is not a medical device and does not replace professional healthcare.",
+          "Keep your information up to date, revoke the link if you lose your tag, and do not add someone else's information without their knowledge."
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved."
+  },
+  "toast": {
+    "dismiss": "Dismiss notification"
+  },
+  "dash": {
+    "menuLabel": "Dashboard menu",
+    "menu": {
+      "overview": "Overview",
+      "profile": "Health profile",
+      "tags": "Link and QR",
+      "logs": "Access history",
+      "settings": "Settings",
+      "logout": "Log out"
+    },
+    "loadError": "Could not load the information. Please try again.",
+    "overview": {
+      "greeting": "Hello, {{name}}",
+      "intro": "Here is the status of your emergency information.",
+      "completionTitle": "Profile completion",
+      "completionDone": "Your profile is complete.",
+      "items": {
+        "birthDate": "Add your date of birth",
+        "bloodType": "Choose your blood type",
+        "healthInfo": "Add an allergy, condition, medication or note",
+        "contact": "Add at least one emergency contact"
+      },
+      "editProfile": "Edit profile",
+      "emergencyTitle": "Your emergency page",
+      "noTag": "You don't have a link yet. Once created, you can write it to an NFC tag or use it as a QR code.",
+      "createTag": "Create link",
+      "preview": "Preview page",
+      "previewNote": "Previews also appear in your access history.",
+      "manageTag": "Manage link and QR",
+      "shortCode": "Short code",
+      "recentTitle": "Recent access",
+      "noAccess": "Your page has not been opened yet.",
+      "lastAccess": "Last access",
+      "allLogs": "See all history"
+    }
+  },
+  "profile": {
+    "title": "Health profile",
+    "intro": "What you enter here is stored encrypted. You decide which details appear on the emergency page.",
+    "personal": {
+      "title": "Personal details",
+      "fullName": "Full name",
+      "birthDate": "Date of birth",
+      "bloodType": "Blood type",
+      "bloodNone": "Not selected",
+      "bloodUnknown": "Unknown",
+      "note": "Emergency note",
+      "noteHint": "A short note you consider important. Up to 500 characters.",
+      "save": "Save personal details",
+      "saved": "Personal details saved."
+    },
+    "visibility": {
+      "label": "Show on emergency page",
+      "nameAlways": "Your name is always shown on the emergency page.",
+      "updated": "Visibility updated."
+    },
+    "lists": {
+      "allergies": {
+        "title": "Allergies",
+        "empty": "No allergies saved.",
+        "name": "Substance or medication",
+        "description": "Description (optional)",
+        "add": "Add allergy"
+      },
+      "conditions": {
+        "title": "Chronic conditions",
+        "empty": "No conditions saved.",
+        "name": "Condition",
+        "description": "Description (optional)",
+        "add": "Add condition"
+      },
+      "medications": {
+        "title": "Regular medications",
+        "empty": "No medications saved.",
+        "name": "Medication",
+        "usage": "Usage notes (optional)",
+        "add": "Add medication"
+      },
+      "contacts": {
+        "title": "Emergency contacts",
+        "empty": "No contacts saved. We recommend adding at least one person to call in an emergency.",
+        "name": "Full name",
+        "relation": "Relationship",
+        "phone": "Phone number",
+        "phoneHint": "E.g. 0532 123 45 67 or +90 532 123 45 67",
+        "add": "Add contact",
+        "orderHint": "They are shown in this order on the emergency page.",
+        "moveUp": "Move {{name}} up",
+        "moveDown": "Move {{name}} down"
+      }
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "confirmDelete": "Delete this entry?",
+      "yesDelete": "Yes, delete",
+      "saveItem": "Save",
+      "limit": "At most {{count}} entries can be added.",
+      "added": "Entry added.",
+      "updated": "Entry updated.",
+      "deleted": "Entry deleted.",
+      "orderSaved": "Order saved."
+    }
+  },
+  "tags": {
+    "title": "Link and QR code",
+    "intro": "Your personal link to the emergency page. Only this link is written to the tag, never your health data.",
+    "empty": "You don't have an emergency link yet.",
+    "create": "Create link",
+    "created": "Link created.",
+    "linkTitle": "Emergency link",
+    "linkLabel": "Link to write to the NFC tag",
+    "copy": "Copy",
+    "copied": "Copied.",
+    "copyFailed": "Could not copy. Select the link and copy it manually.",
+    "preview": "Preview page",
+    "previewNote": "Previews also appear in your access history.",
+    "qrTitle": "QR code",
+    "qrAlt": "QR code containing the emergency link",
+    "qrDownload": "Download QR code as PNG",
+    "qrFailed": "The QR code could not be generated.",
+    "codeTitle": "Short code",
+    "codeText": "When NFC or QR is unavailable, this code is entered at {{site}}/access.",
+    "warning": "Anyone who knows this link can see the details you chose to show. Do not share it publicly.",
+    "localhost": "This link only works on this computer (localhost). To try it with a phone, set APP_BASE_URL in the backend environment file to an address your phone can reach.",
+    "nfcTitle": "How to write it to an NFC tag",
+    "nfcSteps": [
+      "Get an NFC tag such as NTAG213, NTAG215 or NTAG216. All three can hold this link.",
+      "Install an app such as NFC Tools on your phone.",
+      "In the app, go to Write, choose Add a record and select the URL/URI type.",
+      "Paste the link above and tap OK.",
+      "Tap Write, then hold the phone against the tag until it confirms.",
+      "Test the tag and check that your page opens in the phone's browser."
+    ],
+    "nfcNote": "Only this link should be written to the tag. Do not lock the tag; if you renew the link you will need to rewrite it.",
+    "dangerTitle": "Lost your tag?",
+    "dangerText": "When you create a new link, the old one stops working immediately. You then need to rewrite the tag with the new link.",
+    "regenerate": "Create a new link",
+    "regenerateConfirm": "The old link and short code will be revoked immediately. Continue?",
+    "regenerateYes": "Yes, renew",
+    "regenerated": "New link created. The old link no longer works.",
+    "revoke": "Revoke link",
+    "revokeConfirm": "If the link is revoked, your page cannot be opened in an emergency. Continue?",
+    "revokeYes": "Yes, revoke",
+    "revoked": "Link revoked.",
+    "historyTitle": "Revoked links",
+    "revokedAt": "Revoked on {{date}}",
+    "loadError": "Could not load link details."
+  },
+  "logs": {
+    "title": "Access history",
+    "intro": "When your emergency page was opened. Your health data is never written to these records; they are kept for at most 30 days.",
+    "empty": "Your page has not been opened yet.",
+    "kind": {
+      "LINK": "Link (NFC or QR)",
+      "SHORT_CODE": "Short code"
+    },
+    "network": "Network: {{ip}}",
+    "noNetwork": "No network info",
+    "more": "Show more",
+    "when": "Date and time",
+    "type": "Access type",
+    "info": "General access info"
+  },
+  "settings": {
+    "title": "Account settings",
+    "account": {
+      "title": "Account details",
+      "name": "Full name",
+      "email": "Email",
+      "since": "Account created",
+      "consent": "Your consents (version {{version}})",
+      "consentDate": "Privacy notice and explicit consent: {{date}}"
+    },
+    "password": {
+      "title": "Change password",
+      "current": "Current password",
+      "new": "New password",
+      "confirm": "Confirm new password",
+      "submit": "Change password",
+      "done": "Your password was changed. Sessions on other devices were signed out."
+    },
+    "session": {
+      "title": "Session",
+      "logout": "Log out"
+    },
+    "erase": {
+      "title": "Request deletion of my personal data",
+      "text": "Your health profile, emergency contacts and access history are deleted, and your link is revoked. Your account stays.",
+      "button": "Delete my health data",
+      "confirmPassword": "Enter your password to confirm",
+      "submit": "Permanently delete my data",
+      "done": "Your health data was deleted and your link was revoked."
+    },
+    "delete": {
+      "title": "Delete account",
+      "text": "Your account, health profile, links and short codes are permanently deleted. This cannot be undone and your tag will never open again.",
+      "button": "Delete my account",
+      "understand": "I understand that my account and all my data will be permanently deleted.",
+      "confirmPassword": "Enter your password to confirm",
+      "submit": "Permanently delete my account"
+    }
+  }
+}

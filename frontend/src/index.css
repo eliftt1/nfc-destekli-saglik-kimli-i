@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-ink: #10243a;
+  --color-paper: #f5f7f9;
+  --color-brand: #0b6e78;
+  --color-brand-dark: #085760;
+  --color-brand-soft: #e3f2f3;
+  --color-alert: #b3202f;
+  --color-alert-dark: #7a1420;
+  --color-alert-soft: #fcecee;
+  --color-line: #d5dde4;
+  --color-slate: #4a5b6c;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--color-paper); color: var(--color-ink); font-family: var(--font-sans); line-height: 1.5; }
+
+/* Klavye ile gezinme için her zaman görünür odak */
+:focus-visible { outline: 3px solid var(--color-brand); outline-offset: 2px; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,452 @@
+{
+  "brand": {
+    "name": "Acil Künye"
+  },
+  "common": {
+    "loading": "Yükleniyor…",
+    "retry": "Tekrar dene",
+    "cancel": "Vazgeç",
+    "save": "Kaydet",
+    "back": "Geri",
+    "backHome": "Ana sayfaya dön",
+    "required": "zorunlu"
+  },
+  "nav": {
+    "login": "Giriş yap",
+    "register": "Hesap oluştur",
+    "language": "Dil",
+    "skipToContent": "İçeriğe geç",
+    "privacy": "Gizlilik",
+    "terms": "Kullanım hakkında",
+    "footerNote": "Bu bir dönem projesidir; tıbbi cihaz veya resmi sağlık kaydı değildir.",
+    "dashboard": "Panelim"
+  },
+  "home": {
+    "title": "Sağlık bilgileriniz, ihtiyaç duyulan anda bir dokunuş uzakta.",
+    "text": "Alerjilerinizi, ilaçlarınızı ve acil durum kişilerinizi kaydedin. Bilekliğinizdeki veya künyenizdeki NFC etiketi ya da QR kod okutulduğunda, yardım eden kişi uygulama indirmeden yalnızca sizin izin verdiğiniz bilgileri görür.",
+    "ownerTitle": "Etiketin sahibi misiniz?",
+    "ownerText": "Ücretsiz hesap oluşturun, profilinizi doldurun ve etiketiniz için bağlantınızı alın.",
+    "codeTitle": "Acil durumdasınız ve etiketi okutamıyor musunuz?",
+    "codeText": "Etiketin üzerinde veya yanında yazan 10 karakterlik kodu girin.",
+    "howTitle": "Nasıl çalışır?",
+    "steps": {
+      "profile": {
+        "title": "Sağlık profilinizi oluşturun",
+        "text": "Kan grubunuzu, alerjilerinizi, ilaçlarınızı ve ulaşılacak kişileri ekleyin. Hangi bilginin görüneceğine siz karar verirsiniz."
+      },
+      "tag": {
+        "title": "Bağlantıyı etikete yazın",
+        "text": "Size özel bağlantıyı bir NFC etiketine yazın veya QR kodu yazdırın. Etikete sağlık bilgisi değil, yalnızca bu bağlantı yazılır."
+      },
+      "view": {
+        "title": "Acil durumda bilgiler görüntülenir",
+        "text": "Etiket okutulduğunda telefonun tarayıcısında sayfanız açılır. Giriş gerekmez; kişileri tek dokunuşla aranabilir."
+      }
+    },
+    "nfcTitle": "NFC, QR ve kısa kod",
+    "nfcText": "NFC destekli telefonlar etiketi yaklaştırınca bağlantıyı açar. Diğer telefonlar QR kodu kamerayla tarayabilir. İkisi de olmazsa kısa kod bu sayfadan girilebilir.",
+    "trustTitle": "Bilmeniz gereken",
+    "trustText": "Acil durum sayfası parola istemez. Bağlantıyı bilen herkes, yalnızca sizin göstermeyi seçtiğiniz bilgileri görebilir. Etiketinizi kaybederseniz bağlantıyı tek tuşla iptal edip yenisini oluşturabilirsiniz."
+  },
+  "access": {
+    "title": "Kısa kodla erişim",
+    "text": "NFC okutamıyor veya QR kodu tarayamıyorsanız, etiketteki kodu buraya yazın.",
+    "label": "Kısa kod",
+    "placeholder": "ABCDE-12345",
+    "submit": "Bilgileri göster",
+    "invalid": "Bu kod geçersiz veya iptal edilmiş. Kodu kontrol edip tekrar deneyin.",
+    "rateLimited": "Çok fazla başarısız deneme yapıldı. Lütfen bir süre sonra tekrar deneyin.",
+    "network": "Sunucuya ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
+    "empty": "Lütfen kodu yazın."
+  },
+  "auth": {
+    "fullName": "Ad soyad",
+    "email": "E-posta",
+    "password": "Şifre",
+    "passwordConfirm": "Şifre tekrar",
+    "passwordHint": "En az 10 karakter; en az bir harf ve bir rakam içermeli.",
+    "login": {
+      "title": "Giriş yap",
+      "submit": "Giriş yap",
+      "forgot": "Şifremi unuttum",
+      "noAccount": "Hesabınız yok mu?",
+      "toRegister": "Hesap oluşturun"
+    },
+    "register": {
+      "title": "Hesap oluştur",
+      "submit": "Hesap oluştur",
+      "haveAccount": "Zaten hesabınız var mı?",
+      "toLogin": "Giriş yapın",
+      "consentsTitle": "Onaylar",
+      "acceptPrivacy": "Aydınlatma metnini okudum ve anladım.",
+      "privacyLink": "Aydınlatma metnini aç",
+      "acceptHealthData": "Sağlık verilerimin (kan grubu, alerji, hastalık, ilaç gibi) bu platformda saklanmasına ve gösterilmesine izin verdiğim bilgilerin, acil durum bağlantısını bilen herkes tarafından görüntülenebilmesine açık rıza veriyorum. Bu rızayı hesabımı silerek geri alabileceğimi biliyorum."
+    },
+    "forgot": {
+      "title": "Şifremi unuttum",
+      "text": "E-posta adresinizi girin. Hesabınız varsa şifre sıfırlama bağlantısı gönderilir.",
+      "submit": "Sıfırlama bağlantısı iste",
+      "sent": "Talebiniz alındı. Bu adrese kayıtlı bir hesap varsa şifre sıfırlama bağlantısı e-posta ile gönderilir.",
+      "notConfigured": "Bu ortamda e-posta servisi yapılandırılmamış, bu yüzden e-posta gönderilmedi. Geliştirme ortamında sıfırlama bağlantısı sunucu konsoluna yazılır.",
+      "backToLogin": "Girişe dön"
+    },
+    "reset": {
+      "title": "Yeni şifre belirle",
+      "submit": "Şifreyi değiştir",
+      "done": "Şifreniz değiştirildi. Şimdi yeni şifrenizle giriş yapabilirsiniz.",
+      "missingToken": "Sıfırlama bağlantısı eksik veya hatalı. Lütfen yeni bir sıfırlama isteyin.",
+      "requestNew": "Yeni sıfırlama iste"
+    }
+  },
+  "emergency": {
+    "pageTitle": "Acil durum bilgileri",
+    "loading": "Bilgiler yükleniyor…",
+    "invalidTitle": "Bu bağlantı geçersiz",
+    "invalidText": "Bağlantı yanlış, iptal edilmiş veya süresi dolmuş olabilir. Sağlık bilgisi gösterilemiyor.",
+    "invalidHelp": "Etiketin yanında yazan kısa kodu girerek deneyebilirsiniz.",
+    "enterCode": "Kısa kod gir",
+    "networkTitle": "Bilgilere ulaşılamadı",
+    "networkText": "İnternet bağlantınızı kontrol edip tekrar deneyin.",
+    "call112": "112 Acil Çağrı Merkezi'ni ara",
+    "attention": "Dikkat",
+    "allergies": "Alerjiler",
+    "medications": "Düzenli kullanılan ilaçlar",
+    "conditions": "Kronik hastalıklar",
+    "note": "Acil durum notu",
+    "bloodType": "Kan grubu",
+    "birthDate": "Doğum tarihi",
+    "age": "{{count}} yaşında",
+    "contacts": "Acil durumda aranacak kişiler",
+    "call": "Ara",
+    "updatedAt": "Son güncelleme",
+    "noExtra": "Bu kişi henüz paylaşılan ek bilgi eklememiş. Gerekirse 112'yi arayın.",
+    "disclaimer": "Bu bilgiler kişinin kendisi tarafından girilmiştir ve doğrulanmış bir tıbbi kayıt yerine geçmez. Sağlık durumu şüphesi varsa 112'yi arayın."
+  },
+  "validation": {
+    "required": "Bu alan zorunlu.",
+    "invalid": "Girilen değer geçersiz.",
+    "invalid_email": "Geçerli bir e-posta adresi girin.",
+    "password_too_short": "Şifre en az 10 karakter olmalı.",
+    "password_too_weak": "Şifre en az bir harf ve bir rakam içermeli.",
+    "password_mismatch": "Şifreler eşleşmiyor.",
+    "name_too_short": "Ad soyad en az 2 karakter olmalı.",
+    "too_long": "Bu değer çok uzun.",
+    "consent_required": "Devam etmek için bu onay gerekli.",
+    "email_taken": "Bu e-posta adresi zaten kullanılıyor.",
+    "wrong_password": "Şifre hatalı.",
+    "invalid_date": "Geçerli bir tarih girin (geçmiş bir tarih olmalı).",
+    "invalid_blood_type": "Geçerli bir kan grubu seçin.",
+    "invalid_phone": "Geçerli bir telefon numarası girin.",
+    "invalid_id": "Geçersiz kayıt."
+  },
+  "errors": {
+    "NETWORK": "Sunucuya ulaşılamadı. Bağlantınızı kontrol edip tekrar deneyin.",
+    "INTERNAL": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.",
+    "UNAUTHORIZED": "Oturumunuz sona erdi. Lütfen tekrar giriş yapın.",
+    "INVALID_CREDENTIALS": "E-posta veya şifre hatalı.",
+    "EMAIL_TAKEN": "Bu e-posta adresi zaten kullanılıyor.",
+    "RATE_LIMITED": "Çok fazla deneme yaptınız. Lütfen biraz bekleyip tekrar deneyin.",
+    "CSRF_INVALID": "Güvenlik doğrulaması başarısız oldu. Sayfayı yenileyip tekrar deneyin.",
+    "INVALID_RESET_TOKEN": "Sıfırlama bağlantısı geçersiz veya süresi dolmuş. Yeni bir bağlantı isteyin.",
+    "WRONG_CURRENT_PASSWORD": "Şifre hatalı.",
+    "VALIDATION_ERROR": "Lütfen işaretli alanları kontrol edin.",
+    "NOT_FOUND": "Kayıt bulunamadı.",
+    "LIMIT_REACHED": "Bu liste için izin verilen en fazla kayıt sayısına ulaştınız.",
+    "ACTIVE_TAG_EXISTS": "Zaten aktif bir etiketiniz var.",
+    "TAG_REVOKED": "Bu etiket zaten iptal edilmiş.",
+    "INVALID_ORDER": "Sıralama kaydedilemedi. Sayfayı yenileyip tekrar deneyin."
+  },
+  "privacy": {
+    "title": "Gizlilik ve kullanım bilgilendirmesi",
+    "draft": "Bu metin, uygulama geliştirme kapsamında hazırlanmış bir bilgilendirme taslağıdır. Hukuki uygunluğun garantisi değildir; yayına almadan önce bir hukuk uzmanı tarafından gözden geçirilmelidir.",
+    "sections": [
+      {
+        "id": "controller",
+        "title": "Veri sorumlusu",
+        "body": [
+          "Bu uygulama bir yazılım mühendisliği dönem projesi olarak geliştirilmiştir. Yayına alınırken veri sorumlusunun adı ve iletişim bilgileri (ör. e-posta adresi) bu bölüme eklenmelidir: [AD SOYAD / KURUM – İLETİŞİM E-POSTASI]."
+        ]
+      },
+      {
+        "id": "data",
+        "title": "Hangi verileri topluyoruz?",
+        "body": [
+          "Hesap bilgileri: ad soyad, e-posta adresi ve şifrenizin tek yönlü özeti (şifrenizin kendisi saklanmaz).",
+          "Sağlık profili: doğum tarihi, kan grubu, alerjiler, kronik hastalıklar, düzenli kullanılan ilaçlar ve acil durum notu. Bu alanları yalnızca siz girersiniz ve hepsi isteğe bağlıdır.",
+          "Acil durum kişileri: ad soyad, yakınlık derecesi ve telefon numarası. Başka bir kişinin bilgisini eklemeden önce onu bilgilendirmeniz gerekir.",
+          "Erişim kayıtları: acil durum sayfanızın ne zaman ve hangi yolla (bağlantı/NFC/QR veya kısa kod) açıldığı ile kısaltılmış IP adresi bilgisi. Kesin konum veya cihaz kimliği toplanmaz.",
+          "Oturum çerezi: giriş yaptığınızı hatırlamak için gerekli çerez. Reklam veya takip çerezi kullanılmaz."
+        ]
+      },
+      {
+        "id": "purpose",
+        "title": "Verileri neden ve hangi dayanakla işliyoruz?",
+        "body": [
+          "Hesap bilgileri, hesabınızı oluşturmak ve oturum açmanızı sağlamak için işlenir.",
+          "Sağlık verileri özel nitelikli kişisel veridir. Bunlar yalnızca acil durumda yardım eden kişilere gösterilmek amacıyla ve kayıt sırasında ayrıca verdiğiniz açık rızanıza dayanarak işlenir. Bu rıza diğer onaylardan ayrıdır ve hesabınızı silerek geri alabilirsiniz.",
+          "Erişim kayıtları, sayfanızın ne zaman açıldığını size göstermek ve kötüye kullanımı fark etmenize yardımcı olmak için tutulur."
+        ]
+      },
+      {
+        "id": "emergency",
+        "title": "Acil durum sayfası nasıl çalışır?",
+        "body": [
+          "Etiketinize veya QR kodunuza yalnızca size özel, tahmin edilmesi çok zor bir bağlantı yazılır. Sağlık bilgileri etikete yazılmaz.",
+          "Bu bağlantıyı bilen herkes, giriş yapmadan sayfanızı açabilir. Sayfada yalnızca sizin göstermeyi seçtiğiniz bilgiler yer alır; gizlediğiniz alanlar sunucudan hiç gönderilmez.",
+          "Bağlantıyı herkese açık yerlerde paylaşmayın. Etiketinizi kaybederseniz panelden bağlantıyı iptal edin; eski bağlantı bilgi göstermez ve yeni bir bağlantı oluşturabilirsiniz.",
+          "Sayfa arama motorları tarafından indekslenmemesi için işaretlenir, ancak asıl koruma tahmin edilemeyen bağlantı ve sınırlı veri gösterimidir."
+        ]
+      },
+      {
+        "id": "contacts",
+        "title": "İletişim bilgileri neden gösterilir?",
+        "body": [
+          "Acil durum kişilerinin adı, yakınlık derecesi ve telefon numarası, yardım eden kişinin sizin adınıza ilgili kişilere hızlıca ulaşabilmesi için gösterilir. Bu bilgilerin gösterilmesini her zaman kapatabilirsiniz."
+        ]
+      },
+      {
+        "id": "security",
+        "title": "Verilerinizi nasıl koruyoruz?",
+        "body": [
+          "Sağlık verileri veritabanında alan bazında şifrelenmiş olarak saklanır. Şifreler Argon2id ile özetlenir. Bağlantı ve kısa kodlar rastgele üretilir ve veritabanında yalnızca özetleri tutulur. Üretimde yalnızca HTTPS kullanılır.",
+          "Hiçbir sistem tamamen risksizdir; bu nedenle yalnızca gerçekten paylaşmak istediğiniz bilgileri girmenizi öneririz."
+        ]
+      },
+      {
+        "id": "retention",
+        "title": "Ne kadar saklıyoruz, nasıl silebilirsiniz?",
+        "body": [
+          "Erişim kayıtları en fazla 30 gün saklanır ve sonra otomatik silinir.",
+          "Hesap ayarlarından dilediğiniz zaman (1) yalnızca sağlık verilerinizi ve erişim geçmişinizi silebilir ya da (2) hesabınızı tamamen silebilirsiniz. Hesap silindiğinde profiliniz, bağlantılarınız ve kısa kodlarınız ile ilişkili tüm veriler silinir ve artık erişilemez.",
+          "Bu projede yasal olarak saklanması zorunlu tutulan ayrı bir kayıt tutulmamaktadır; yayına alınırken bu durum yeniden değerlendirilmelidir."
+        ]
+      },
+      {
+        "id": "rights",
+        "title": "Haklarınız",
+        "body": [
+          "6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi kapsamında; verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme ve işleme faaliyetine itiraz etme haklarına sahipsiniz. Düzeltme ve silme işlemlerini panelden kendiniz yapabilirsiniz; diğer talepler için yukarıdaki iletişim bilgisini kullanabilirsiniz."
+        ]
+      },
+      {
+        "id": "usage",
+        "title": "Kullanım hakkında",
+        "body": [
+          "Bu uygulama kullanıcının kendi girdiği bilgileri acil durumda gösterir. Bu bilgiler doğrulanmış bir tıbbi kayıt yerine geçmez; doğruluğundan ve güncelliğinden kullanıcı sorumludur.",
+          "Acil bir sağlık durumunda öncelikle 112 Acil Çağrı Merkezi aranmalıdır. Bu uygulama bir tıbbi cihaz değildir ve profesyonel sağlık hizmetinin yerini tutmaz.",
+          "Bilgileri güncel tutun, etiketinizi kaybederseniz bağlantıyı iptal edin ve başkasına ait bilgiyi onun haberi olmadan eklemeyin."
+        ]
+      }
+    ]
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "text": "Aradığınız sayfa yok veya taşınmış olabilir."
+  },
+  "toast": {
+    "dismiss": "Bildirimi kapat"
+  },
+  "dash": {
+    "menuLabel": "Panel menüsü",
+    "menu": {
+      "overview": "Genel bakış",
+      "profile": "Sağlık profili",
+      "tags": "Bağlantı ve QR",
+      "logs": "Erişim geçmişi",
+      "settings": "Ayarlar",
+      "logout": "Çıkış yap"
+    },
+    "loadError": "Bilgiler yüklenemedi. Lütfen tekrar deneyin.",
+    "overview": {
+      "greeting": "Merhaba, {{name}}",
+      "intro": "Acil durum bilgilerinizin durumu aşağıda.",
+      "completionTitle": "Profil tamamlanma durumu",
+      "completionDone": "Profiliniz tamamlandı.",
+      "items": {
+        "birthDate": "Doğum tarihinizi ekleyin",
+        "bloodType": "Kan grubunuzu seçin",
+        "healthInfo": "Alerji, hastalık, ilaç veya not ekleyin",
+        "contact": "En az bir acil durum kişisi ekleyin"
+      },
+      "editProfile": "Profili düzenle",
+      "emergencyTitle": "Acil durum sayfanız",
+      "noTag": "Henüz bir bağlantınız yok. Oluşturunca NFC etikete yazabilir veya QR kod olarak kullanabilirsiniz.",
+      "createTag": "Bağlantı oluştur",
+      "preview": "Sayfayı önizle",
+      "previewNote": "Önizleme de erişim geçmişinde görünür.",
+      "manageTag": "Bağlantı ve QR yönetimi",
+      "shortCode": "Kısa kod",
+      "recentTitle": "Son erişimler",
+      "noAccess": "Sayfanız henüz hiç açılmadı.",
+      "lastAccess": "Son erişim",
+      "allLogs": "Tüm geçmişi gör"
+    }
+  },
+  "profile": {
+    "title": "Sağlık profili",
+    "intro": "Burada girdiğiniz bilgiler şifreli saklanır. Hangi bilginin acil durum sayfasında görüneceğine siz karar verirsiniz.",
+    "personal": {
+      "title": "Kişisel bilgiler",
+      "fullName": "Ad soyad",
+      "birthDate": "Doğum tarihi",
+      "bloodType": "Kan grubu",
+      "bloodNone": "Seçilmedi",
+      "bloodUnknown": "Bilinmiyor",
+      "note": "Acil durum notu",
+      "noteHint": "Önemli gördüğünüz kısa bir bilgi. En fazla 500 karakter.",
+      "save": "Kişisel bilgileri kaydet",
+      "saved": "Kişisel bilgiler kaydedildi."
+    },
+    "visibility": {
+      "label": "Acil durum sayfasında göster",
+      "nameAlways": "Adınız acil durum sayfasında her zaman gösterilir.",
+      "updated": "Görünürlük güncellendi."
+    },
+    "lists": {
+      "allergies": {
+        "title": "Alerjiler",
+        "empty": "Kayıtlı alerji yok.",
+        "name": "Madde veya ilaç adı",
+        "description": "Açıklama (isteğe bağlı)",
+        "add": "Alerji ekle"
+      },
+      "conditions": {
+        "title": "Kronik hastalıklar",
+        "empty": "Kayıtlı hastalık yok.",
+        "name": "Hastalık adı",
+        "description": "Açıklama (isteğe bağlı)",
+        "add": "Hastalık ekle"
+      },
+      "medications": {
+        "title": "Düzenli kullanılan ilaçlar",
+        "empty": "Kayıtlı ilaç yok.",
+        "name": "İlaç adı",
+        "usage": "Kullanım açıklaması (isteğe bağlı)",
+        "add": "İlaç ekle"
+      },
+      "contacts": {
+        "title": "Acil durum kişileri",
+        "empty": "Kayıtlı kişi yok. Acil durumda aranacak en az bir kişi eklemenizi öneririz.",
+        "name": "Ad soyad",
+        "relation": "Yakınlık derecesi",
+        "phone": "Telefon numarası",
+        "phoneHint": "Örn. 0532 123 45 67 veya +90 532 123 45 67",
+        "add": "Kişi ekle",
+        "orderHint": "Acil durum sayfasında bu sırayla gösterilir.",
+        "moveUp": "{{name}} kişisini yukarı taşı",
+        "moveDown": "{{name}} kişisini aşağı taşı"
+      }
+    },
+    "actions": {
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "confirmDelete": "Bu kaydı silmek istiyor musunuz?",
+      "yesDelete": "Evet, sil",
+      "saveItem": "Kaydet",
+      "limit": "En fazla {{count}} kayıt eklenebilir.",
+      "added": "Kayıt eklendi.",
+      "updated": "Kayıt güncellendi.",
+      "deleted": "Kayıt silindi.",
+      "orderSaved": "Sıralama kaydedildi."
+    }
+  },
+  "tags": {
+    "title": "Bağlantı ve QR kod",
+    "intro": "Acil durum sayfanıza giden size özel bağlantı. Etikete yalnızca bu bağlantı yazılır, sağlık bilgileriniz yazılmaz.",
+    "empty": "Henüz bir acil durum bağlantınız yok.",
+    "create": "Bağlantı oluştur",
+    "created": "Bağlantı oluşturuldu.",
+    "linkTitle": "Acil durum bağlantısı",
+    "linkLabel": "NFC etikete yazılacak bağlantı",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı.",
+    "copyFailed": "Kopyalanamadı. Bağlantıyı elle seçip kopyalayın.",
+    "preview": "Sayfayı önizle",
+    "previewNote": "Önizleme de erişim geçmişinde görünür.",
+    "qrTitle": "QR kod",
+    "qrAlt": "Acil durum bağlantısını içeren QR kod",
+    "qrDownload": "QR kodu PNG olarak indir",
+    "qrFailed": "QR kod oluşturulamadı.",
+    "codeTitle": "Kısa kod",
+    "codeText": "NFC veya QR kullanılamadığında {{site}}/access adresine bu kod yazılır.",
+    "warning": "Bu bağlantıyı bilen herkes, göstermeyi seçtiğiniz bilgileri görebilir. Herkese açık yerlerde paylaşmayın.",
+    "localhost": "Bu bağlantı yalnızca bu bilgisayarda çalışır (localhost). Telefonla denemek için backend ortam dosyasında APP_BASE_URL değerini telefonun erişebileceği bir adresle değiştirin.",
+    "nfcTitle": "NFC etikete nasıl yazılır?",
+    "nfcSteps": [
+      "NTAG213, NTAG215 veya NTAG216 gibi bir NFC etiketi alın. Üçü de bu bağlantıyı taşıyabilir.",
+      "Telefonunuza NFC Tools gibi bir uygulama kurun.",
+      "Uygulamada Yaz bölümüne gidin, Kayıt ekle seçeneğinden URL/URI türünü seçin.",
+      "Yukarıdaki bağlantıyı yapıştırın ve Tamam'a dokunun.",
+      "Yaz düğmesine dokunun ve telefonu etiketin üzerine yaklaştırıp bekleyin.",
+      "Etiketi telefonunuzun tarayıcıda sayfanızı açtığını görerek deneyin."
+    ],
+    "nfcNote": "Etikete yalnızca bu bağlantı yazılmalıdır. Etiketi kilitlemeyin; bağlantıyı yenilerseniz etiketi yeniden yazmanız gerekir.",
+    "dangerTitle": "Etiketi kaybettiniz mi?",
+    "dangerText": "Yeni bir bağlantı oluşturduğunuzda eskisi hemen çalışmaz hale gelir. Etiketi yeni bağlantıyla yeniden yazmanız gerekir.",
+    "regenerate": "Yeni bağlantı oluştur",
+    "regenerateConfirm": "Eski bağlantı ve kısa kod hemen iptal edilecek. Devam edilsin mi?",
+    "regenerateYes": "Evet, yenile",
+    "regenerated": "Yeni bağlantı oluşturuldu. Eski bağlantı artık çalışmıyor.",
+    "revoke": "Bağlantıyı iptal et",
+    "revokeConfirm": "Bağlantı iptal edilirse acil durumda sayfanız açılamaz. Devam edilsin mi?",
+    "revokeYes": "Evet, iptal et",
+    "revoked": "Bağlantı iptal edildi.",
+    "historyTitle": "İptal edilmiş bağlantılar",
+    "revokedAt": "{{date}} tarihinde iptal edildi",
+    "loadError": "Bağlantı bilgileri yüklenemedi."
+  },
+  "logs": {
+    "title": "Erişim geçmişi",
+    "intro": "Acil durum sayfanızın ne zaman açıldığı. Sağlık bilgileriniz bu kayıtlara yazılmaz; kayıtlar en fazla 30 gün saklanır.",
+    "empty": "Sayfanız henüz hiç açılmadı.",
+    "kind": {
+      "LINK": "Bağlantı (NFC veya QR)",
+      "SHORT_CODE": "Kısa kod"
+    },
+    "network": "Ağ: {{ip}}",
+    "noNetwork": "Ağ bilgisi yok",
+    "more": "Daha fazla göster",
+    "when": "Tarih ve saat",
+    "type": "Erişim türü",
+    "info": "Genel erişim bilgisi"
+  },
+  "settings": {
+    "title": "Hesap ayarları",
+    "account": {
+      "title": "Hesap bilgileri",
+      "name": "Ad soyad",
+      "email": "E-posta",
+      "since": "Hesap oluşturma tarihi",
+      "consent": "Onaylarınız ({{version}} sürümü)",
+      "consentDate": "Aydınlatma ve açık rıza: {{date}}"
+    },
+    "password": {
+      "title": "Şifre değiştir",
+      "current": "Mevcut şifre",
+      "new": "Yeni şifre",
+      "confirm": "Yeni şifre tekrar",
+      "submit": "Şifreyi değiştir",
+      "done": "Şifreniz değiştirildi. Diğer cihazlardaki oturumlar kapatıldı."
+    },
+    "session": {
+      "title": "Oturum",
+      "logout": "Çıkış yap"
+    },
+    "erase": {
+      "title": "Kişisel verilerimin silinmesini talep et",
+      "text": "Sağlık profiliniz, acil durum kişileriniz ve erişim geçmişiniz silinir; bağlantınız iptal edilir. Hesabınız kalır.",
+      "button": "Sağlık verilerimi sil",
+      "confirmPassword": "Onaylamak için şifrenizi girin",
+      "submit": "Verilerimi kalıcı olarak sil",
+      "done": "Sağlık verileriniz silindi ve bağlantınız iptal edildi."
+    },
+    "delete": {
+      "title": "Hesabı sil",
+      "text": "Hesabınız, sağlık profiliniz, bağlantılarınız ve kısa kodlarınız kalıcı olarak silinir. Bu işlem geri alınamaz; etiketiniz bir daha açılmaz.",
+      "button": "Hesabımı sil",
+      "understand": "Hesabımın ve tüm verilerimin kalıcı olarak silineceğini anlıyorum.",
+      "confirmPassword": "Onaylamak için şifrenizi girin",
+      "submit": "Hesabımı kalıcı olarak sil"
+    }
+  }
+}

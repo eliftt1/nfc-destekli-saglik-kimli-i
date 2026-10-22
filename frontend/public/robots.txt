@@ -1,0 +1,4 @@
+# robots.txt tek başına bir gizlilik mekanizması DEĞİLDİR; asıl koruma tahmin edilemeyen token ve veri erişim kurallarıdır.
+User-agent: *
+Disallow: /e/
+Disallow: /dashboard
